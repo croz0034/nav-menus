@@ -1,0 +1,148 @@
+/* Sans-serif titles: Cabin*/
+@import "https://fonts.googleapis.com/css?family=Cabin|Old+Standard+TT";
+/*    Serif text: Old Standard TT*/
+/*    Style pairing retrieved from: "http://fontpair.co//"*/
+
+
+https://color.adobe.com/create/color-wheel/?base=2&rule=Monochromatic&selected=3&name=My%20Color%20Theme&mode=rgb&rgbvalues=0,0.5,0.0938819855418842,0.30000000000000004,1,0.431434779758638,0,1,0.1877639710837684,0.15000000000000002,0.5,0.215717389879319,0,0.8,0.15021117686701474&swatchOrder=0,1,2,3,4
+/***************************************************
+Add your Google Fonts
+Update ALL the named colours to create a monochromatic scheme
+Style the menus - one horizontally and one vertically
+Add the hover/active effects to your menu items
+***************************************************/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    line-height: 1.6;
+    /* ADD the Google sans-serif font to this font stack */
+    font-family: Cabin, Arial, Helvetica, sans-serif;
+}
+html, body{
+    background-color: #00CC26;
+}
+h1{
+    font-size: 6.854rem;
+    /* ADD the Google serif font to this font stack */
+    font-family: "Old Standard TT", "Times New Roman", Times, serif;
+    padding: 1rem 2rem;
+}
+h2{
+    font-size: 4.23rem;
+    /* ADD the Google serif font to this font stack */
+    font-family: "Old Standard TT", "Times New Roman", Times, serif;
+    padding: 1rem 2rem;
+}
+nav li{
+    font-size: 2.618rem;
+}
+p{
+    font-size: 1.618rem;
+    padding: 1rem 2rem;
+}
+.wrapper{
+    max-width: 1400px; 
+    width: 80%;
+    margin: 0 auto;
+    background-color: #4CFF6E;
+    color: #267F37;
+}
+header{
+    border-bottom: 0.8rem solid #00CC26;
+    background-color: #00FF30;
+    color: #007F18;
+}
+
+
+
+
+
+
+
+/*************************************add fonts/colours etc to code above*/
+
+/**********************************Horizontal Menu***********************/
+.menu-h{
+    width: 100%;
+}
+    .menu-h li{
+        
+    list-style: none;
+        line-height: 1.2;
+    width: 20%;
+    float:left;
+    display:inline;
+        text-align: center;
+        
+        /* style the list items to remove the bullets 
+        and line up horizontally
+        and take up 20% of the width of the ul */
+        line-height: 1.2;
+    }
+        .menu-h a,
+        .menu-h a:link,
+        .menu-h a:visited{
+            /* style the anchors to fill the entire width of the li 
+            make sure there is padding around your text */
+            display: block;
+            text-decoration: none;
+            cursor:e-resize;
+            color: #007F18;
+          border: 5px outset #007F18;
+            
+        }
+        .menu-h a:hover,
+        .menu-h a:active{
+            background-color: #007F18;
+            color: #00FF30;
+            border: 5px inset #00FF30;
+        }
+
+
+
+
+
+
+/**********************Vertical Menu ************************/
+.menu-v{
+    width: 20%;
+    float:left;
+}
+    .menu-v li{
+        width: 100%;
+        list-style: none;
+        /* style the list items to remove the bullets 
+        and line up vertically
+        and take up 100% of the width of the ul */
+        line-height: 1.2;
+    }
+        .menu-v a,
+        .menu-v a:link,
+        .menu-v a:visited{
+            /* style the anchors to fill the entire width of the li */
+            display: block;
+            text-decoration: none;
+            cursor:w-resize;
+            color: #007F18;
+          border: 5px outset #007F18;
+        }
+        .menu-v a:hover,
+        .menu-v a:active{
+            background-color: #007F18;
+            color: #00FF30;
+            border: 5px inset #00FF30;
+            font-weight: bold;
+            text-decoration: line-through;
+            
+        }
+main{
+    width:80%;
+    float: right;
+}
+footer{
+    clear:both;
+}
